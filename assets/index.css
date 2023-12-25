@@ -1,0 +1,365 @@
+#main {
+    width: 100%;
+    min-height: 200vh;
+ 
+}
+
+#header {
+    min-height: 700px;
+
+}
+
+.header_navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 96px;
+    background-color: #ffffff;
+    box-shadow  : 0 0 5px rgba(0, 0, 0, 0.7);
+    /* position: relative; */
+    z-index: 1000;
+}
+
+.header_navbar-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 80px 0 80px;
+}
+
+.header_navbar-logo-wrapper {
+    height: 92px;
+
+}
+
+.header_navbar-logo {
+    height: 80px;
+    border-radius: 100%;
+    margin-top: 6px;
+}
+
+.header_navbar-list {
+    align-self: center;
+    display: flex;
+    height: 60px;
+    min-width: 550px;
+    background-color: rgb(82, 165, 132, 90%);
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    border-radius: 80px;
+    margin-left: 330px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+.header_navbar-list-child:hover {
+    color: rgb(255, 255, 255, 70%);
+    
+}
+
+.header_navbar-list-child {
+    font-size: 16px;
+    padding: 6px 24px;
+}
+
+.header_navbar-list-text {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_background {
+    background: url(./img/header_bg.jpg) no-repeat fixed center;
+    width: 1583px;
+    height: 750px;
+    position: absolute;
+    top: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header_backgroud-introduce {
+    width: 530px;
+    height: 230px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.header_background-introduce-name {
+    font-size: 42px;
+    color: #52A584;
+    
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.header_background-introduce-text {
+    font-size: 48px;
+    color: #52A584;
+    font-weight: 100;
+    font-family: 'Dancing Script', cursive;
+
+
+}
+
+.header_navbar-contact {
+   padding-left: 150px;
+}
+
+.header_navbar-contact-text {
+    font-size: 18px;
+    color: #52A584;
+    font-weight: 600;
+}
+
+.header_navbar-contact-number {
+    text-decoration: none;
+    color: #65b897;
+    padding-left: 4px;
+    font-weight: 400;
+}
+
+/* body */
+
+#body {
+    height: 500px;
+    /* background-color: red; */
+    margin-top: 220px;
+    padding-bottom: 70px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.service_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.service_header {
+    text-align: center;
+
+}
+
+.service_heading {
+    font-size: 86px;
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 20px;
+    color: #52A584;
+}
+
+.service_desc {
+    font-size: 24px;
+}
+
+.service_container {
+    padding: 40px 0; 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service_container-element {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.service_container-img {
+    height: 240px;
+    width: 240px;
+    box-shadow: 0 0 0 #000;
+    border-radius: 50%;
+}
+
+.service_container-text {
+    font-size: 30px;
+    padding-top: 20px;
+    color: #52A584;
+}
+
+.service_container-desc {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 4px;
+    
+}
+
+.customer_wrapper {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.customer_heading {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+
+    color: #52A584;
+}
+
+.customer_container {
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top: 40px;
+display: none;
+}
+
+.customer_container-img {
+    box-shadow: 0 0 0 #000;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.customer_container-text-wrapper {
+    /* background-color: red; */
+    width: 527px;
+    height: 326px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-left: 44px;  
+    flex-direction: column;  
+    
+}
+
+.customer_container-text {
+    font-size: 20px ;
+    color: #333;
+}
+
+.customer_button {
+    padding-top: 20px;
+}
+
+.customer_button-dots {
+    height: 16px;
+    width: 16px;
+    background-color: rgb(82, 165, 132, 70%);
+    border-radius: 50%;
+    border: 2px solid rgb(82, 165, 132);
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.customer_button-dots:hover {
+    background-color: rgb(82, 165, 132);
+    
+}
+
+
+
+.customer_container-name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    padding-top: 20px;
+    color:  #52A584;
+   border: 0px 0px 1px 0px #52A584;
+   position: relative;
+}
+
+.customer_container-name::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: #52A584;
+    bottom: -4px;
+    left: -14px;
+}
+
+#footer {
+    width: 100%;
+    background-color: #63AE90;
+    height: 200px;
+    position: relative;
+    bottom: -1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    padding: 0 200px;
+}
+
+.footer_left-info-wrapper {
+    width: 100%;
+
+    color: #f3f3f3;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer_left-address {
+    padding-bottom: 10px;
+}
+
+.footer_left-owner {
+    padding-top: 10px;
+
+}
+.footer_img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.footer_right-info-wrapper {
+    width: 100%;
+    font-weight: 500;
+
+    color: #f3f3f3;
+    font-size: 24px;
+}
+.footer_right-number {
+    padding-bottom: 10px;
+
+}
+.footer_right-icon-wrapper {
+
+}
+
+.footer_right-icon {
+    padding-right: 10px;
+}
+
+.footer_right-icon-fb {
+ color: #395693;
+ font-size: 30px;
+}
+
+.footer_right-icon-ins {
+    color: #A53387;
+ font-size: 30px;
+
+
+
+}
+
+
+
+
+
+
